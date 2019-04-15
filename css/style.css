@@ -41,5 +41,11 @@
     }
 
     header nav ul li {
+        background: purple;
         display: inline-block;
+    }
+
+    header nav ul li a {
+        display: block;
+        padding: 0 0.5em 0 0.5em;
     }
