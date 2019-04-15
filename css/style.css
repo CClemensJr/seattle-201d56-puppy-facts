@@ -104,3 +104,8 @@
             text-align: center;
             width: 50%;
         }
+
+        #info section {
+            margin: 0 auto;
+            width: 80%;
+        }
