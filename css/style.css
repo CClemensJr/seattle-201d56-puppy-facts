@@ -1,0 +1,12 @@
+/*****************
+* Default Styling 
+***/
+
+* {
+    box-sizing: border-box;
+}
+
+body a {
+    color: black;
+    text-decoration: none;
+}
