@@ -107,5 +107,14 @@
 
         #info section {
             margin: 0 auto;
-            width: 80%;
+            width: 90%;
+        }
+
+        #info section figure {
+            border: .5em solid black;
+            display: inline-block;
+        }
+
+        #info section figure image {
+            background: black;
         }
