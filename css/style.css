@@ -52,14 +52,15 @@
 /*****************
 * Main 
 ***/
+    #home, #info {
+        margin-top: 12vh;
+        height: 100vh;
+        width: 100vw;
+    }
+    
     /*****************
     * Home Section 
     ***/
-        #home {
-            margin-top: 12vh;
-            height: 100vh;
-            width: 100vw;
-        }
         
         #home h1 {
             display: block;
