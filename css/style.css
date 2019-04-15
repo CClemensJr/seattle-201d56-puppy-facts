@@ -25,3 +25,9 @@ header {
     top: 0;
     width: 100%;
 }
+
+header nav {
+    background: blue;
+    margin: 0 auto;
+    width: 60%;
+}
