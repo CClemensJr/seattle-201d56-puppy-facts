@@ -113,8 +113,20 @@
         #info section figure {
             border: .5em solid black;
             display: inline-block;
+            margin: 0 auto;
+            width: 33%;
         }
 
         #info section figure image {
             background: black;
         }
+
+        #info section figure figcaption {
+            text-align: center;
+        }
+
+        #info section figure figcaption ol li {
+            padding: .25em;
+        }
+
+
