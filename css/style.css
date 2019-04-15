@@ -15,6 +15,7 @@
 * Navbar 
 ***/
     header {
+        background: black;
         height: 5em;
         left: 0;
         line-height: 5em;
@@ -29,6 +30,7 @@
     }
 
     header nav h1 {
+        color: white;
         float: left;
     }
 
@@ -41,6 +43,7 @@
     }
 
     header nav ul li a {
+        color: white;
         display: block;
         padding: 0 0.5em 0 0.5em;
     }
