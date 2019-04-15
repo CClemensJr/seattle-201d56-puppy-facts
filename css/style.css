@@ -15,7 +15,6 @@
 * Navbar 
 ***/
     header {
-        background: red;
         height: 5em;
         left: 0;
         line-height: 5em;
@@ -25,23 +24,19 @@
     }
 
     header nav {
-        background: blue;
         margin: 0 auto;
         width: 60%;
     }
 
     header nav h1 {
-        background: yellow;
         float: left;
     }
 
     header nav ul {
-        background: green;
         float: right;
     }
 
     header nav ul li {
-        background: purple;
         display: inline-block;
     }
 
