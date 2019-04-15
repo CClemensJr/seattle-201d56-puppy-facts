@@ -10,9 +10,10 @@ function submitForm(event){
   var newType = event.target.petType.value;
   var newAge = event.target.petAge.value;
   var newColor = event.target.petColor.value;
+  console.log('event listener for submit' + newName + ' ' +newType);
 
   var addNewAnimal = new Animal(newName,newType, newAge, newColor);
   addNewAnimal.saveToLocalStorage();
 }
 
-submit.addEventListener('click', submitForm);
+submit.addEventListener('submit', submitForm);
