@@ -31,3 +31,8 @@ header nav {
     margin: 0 auto;
     width: 60%;
 }
+
+header nav h1 {
+    background: yellow;
+    float: left;
+}
