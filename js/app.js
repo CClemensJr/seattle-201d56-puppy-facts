@@ -10,7 +10,7 @@ app.jsgit
 
 var colorsArray = ['multicolored', 'white', 'tan / brown', 'black', 'grey'];
 var animalTypeArray = ['dog', 'cat', 'pig', 'bird', 'rabbit'];
-var animalObjectArray;
+var animalObjectArray = [];
 
 function Animal(name, type, age, color) {
   this.name = name;
@@ -28,13 +28,11 @@ Animal.prototype.saveToLocalStorage = function() {
 //wrapper function to load whatever needs to happen when page is opened
 function onLoad() {
   //check if animalsArray exists in localStorage, else instantiate animalObjectArray
-  if(localStorage.animalObjectArray) {
-    for (let i = 0; i < localStorage.animalObjectArray.length; i++) {
-      var temp = JSON.parse(animalObjectArray[i]);
-      new Animal (temp.name, temp.type, temp.age, temp.color);
-    }
-  } else {
-    animalObjectArray = [];
+  var localAnimals = localStorage.getItem("animalObjectArray");
+  var parsedAnimals = JSON.parse(localAnimals);
+
+  if (parsedAnimals && parsedAnimals.length) {
+    animalObjectArray = parsedAnimals;
   }
 }
 
