@@ -81,3 +81,15 @@
             text-align: center;
             width: 50%;
         }
+
+        #home a {
+            background-color: yellow;
+            border: .1em solid black;
+            border-radius: 2px;
+            display: block;
+            margin: 5em auto;
+            padding-bottom: .25em;
+            padding-top: .25em;
+            text-align: center;
+            width: 50%;
+        }
