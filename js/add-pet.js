@@ -3,7 +3,7 @@
 var colorsArray = ['multicolored', 'white', 'tan / brown', 'black', 'grey'];
 var animalTypeArray = ['dog', 'cat', 'pig', 'bird', 'rabbit'];
 var animalObjectArray;
-onLoad();
+//onLoad();
 
 var submit = document.getElementById('userInputForm');
 
@@ -17,6 +17,7 @@ function submitForm(event){
   console.log('event listener for submit' + newName + ' ' +newType);
 
   var addNewAnimal = new Animal(newName,newType, newAge, newColor);
+  console.log(addNewAnimal + '  is the new animal');
   addNewAnimal.saveToLocalStorage();
 }
 
