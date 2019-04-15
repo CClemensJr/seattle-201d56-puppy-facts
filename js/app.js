@@ -28,7 +28,7 @@ Animal.prototype.saveToLocalStorage = function() {
 //wrapper function to load whatever needs to happen when page is opened
 function onLoad() {
   //check if animalsArray exists in localStorage, else instantiate animalObjectArray
-  var localAnimals = localStorage.getItem("animalObjectArray");
+  var localAnimals = localStorage.getItem('animalObjectArray');
   var parsedAnimals = JSON.parse(localAnimals);
 
   if (parsedAnimals && parsedAnimals.length) {

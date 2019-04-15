@@ -3,7 +3,7 @@
 var colorsArray = ['multicolored', 'white', 'tan / brown', 'black', 'grey'];
 var animalTypeArray = ['dog', 'cat', 'pig', 'bird', 'rabbit'];
 var animalObjectArray;
-onLoad();
+//onLoad();
 
 var submit = document.getElementById('userInputForm');
 
