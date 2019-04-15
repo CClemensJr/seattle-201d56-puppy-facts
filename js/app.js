@@ -2,10 +2,12 @@
 jen shin
 15 April 2019
 Animal object constructor, localStorage instantiation for Animal Farm website
-app.js
+app.jsgit 
 */
 
 //move these two arrays to add pet page
+'use strict';
+
 var colorsArray = ['multicolored', 'white', 'tan / brown', 'black', 'grey'];
 var animalTypeArray = ['dog', 'cat', 'pig', 'bird', 'rabbit'];
 var animalObjectArray;
@@ -16,11 +18,6 @@ function Animal(name, type, age, color) {
   this.age = age;
   this.color = color;
   animalObjectArray.push(this);
-}
-
-//animal method to add newly created animal to animal object array
-Animal.prototype.addAnimal = function(animal) {
-  this.animalObjectArray.push(animal);
 }
 
 //save to local storage
