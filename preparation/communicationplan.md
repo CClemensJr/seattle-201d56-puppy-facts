@@ -13,7 +13,8 @@
 *How will you communicate during the week daytime?*
 
 + Have a stand up in the morning and afternoon around 1500-ish.
-+ How will you communicate after hours?
+
+*How will you communicate after hours?*
 + We will use our Chime private group.
 
 *What is your strategy for ensuring everyone's voices are heard?*
