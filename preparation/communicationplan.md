@@ -21,7 +21,8 @@
 
 + Ensure everyone has room to talk. 
 + Ask everyone by name what they think.
-+ How will you ensure that you are creating a safe environment where everyone feels comfortable speaking up?
+
+*How will you ensure that you are creating a safe environment where everyone feels comfortable speaking up?*
 + All ideas will have space to be heard. 
 + Avoid non-constructive criticisms of ideas. 
 + Adding the question: "how are you feeling?" during twice daily check-ins.
