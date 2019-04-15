@@ -10,3 +10,18 @@ body a {
     color: black;
     text-decoration: none;
 }
+
+
+/*****************
+* Navbar 
+***/
+
+header {
+    background: red;
+    height: 5em;
+    left: 0;
+    line-height: 5em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
