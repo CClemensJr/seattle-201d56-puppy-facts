@@ -14,11 +14,10 @@ function submitForm(event){
   var newType = event.target.petType.value;
   var newAge = event.target.petAge.value;
   var newColor = event.target.petColor.value;
-  console.log('event listener for submit' + newName + ' ' +newType);
 
-  var addNewAnimal = new Animal(newName,newType, newAge, newColor);
-  console.log(addNewAnimal + '  is the new animal');
-  addNewAnimal.saveToLocalStorage();
+  new Animal(newName,newType, newAge, newColor);
+
+  localStorage.setItem('animalObjectArray', JSON.stringify(animalObjectArray));
 }
 
 submit.addEventListener('submit', submitForm);
