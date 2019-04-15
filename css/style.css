@@ -47,3 +47,45 @@
         display: block;
         padding: 0 0.5em 0 0.5em;
     }
+
+
+/*****************
+* Main 
+***/
+    /*****************
+    * Home Section 
+    ***/
+        #home {
+            margin-top: 12vh;
+            height: 100vh;
+            width: 100vw;
+        }
+        
+        #home h1 {
+            display: block;
+            margin: 0 auto;
+            padding-bottom: 6em;
+            padding-top: 6em;
+            text-align: center;
+            width: 50%;
+        }
+
+        #home h2 {
+            display: block;
+            margin: 0 auto;
+            padding-bottom: 3em;
+            padding-top: 3em;
+            text-align: center;
+            width: 50%;
+        }
+
+        #home a {
+            border: .1em solid black;
+            border-radius: 2px;
+            display: block;
+            margin: 5em auto;
+            padding-bottom: .25em;
+            padding-top: .25em;
+            text-align: center;
+            width: 50%;
+        }
