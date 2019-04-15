@@ -57,7 +57,7 @@
         height: 100vh;
         width: 100vw;
     }
-    
+
     /*****************
     * Home Section 
     ***/
@@ -87,6 +87,20 @@
             margin: 5em auto;
             padding-bottom: .25em;
             padding-top: .25em;
+            text-align: center;
+            width: 50%;
+        }
+
+    
+    /*****************
+    * Info Section 
+    ***/
+        
+        #info h1 {
+            display: block;
+            margin: 0 auto;
+            padding-bottom: 3em;
+            padding-top: 6em;
             text-align: center;
             width: 50%;
         }
