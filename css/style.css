@@ -30,8 +30,11 @@
     }
 
     header nav h1 {
-        color: white;
         float: left;
+    }
+
+    header nav h1 a {
+        color: white;
     }
 
     header nav ul {
