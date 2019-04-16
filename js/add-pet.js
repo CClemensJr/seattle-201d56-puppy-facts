@@ -3,6 +3,7 @@
 var animalObjectArray = [];
 var deleteForm;
 var deleteButton;
+var select;
 
 function submitForm(event){
   event.preventDefault();
@@ -14,7 +15,6 @@ function submitForm(event){
 
   new Animal(newName,newType, newAge, newColor);
   localStorage.setItem('animalObjectArray', JSON.stringify(animalObjectArray));
-  createDeleteForm();
 }
 
 //creates a form to delete an animal if localStorage has info
@@ -46,7 +46,7 @@ function createLabelForDeleteForm() {
 
 //helper function to create options for select drop down
 function createSelectOptions() {
-  var select = document.createElement('select');
+  select = document.createElement('select');
   //loop through animalObjectArray to get options for select box
   for (let i = 0; i < animalObjectArray.length; i++) {
     select.options[i] = new Option(`${animalObjectArray[i].name}`, `${animalObjectArray[i].name}`);
@@ -66,17 +66,31 @@ function createDeleteButton() {
 }
 
 //function that deletes an animal
-function deleteAnimal() {
+function deleteAnimal(event) {
+  event.preventDefault();
+  //get selected option value
+  var selectedOption = select.options[select.selectedIndex].value;
+  console.log(selectedOption, ' here is the selected option value');
+  for (let i = 0; i < animalObjectArray.length; i++) {
+    if(selectedOption === animalObjectArray[i].name) {
+      console.log('hooray! your index is: ', i);
+      animalObjectArray.splice(i);
+      if(animalObjectArray.length) {
+        localStorage.setItem('animalObjectArray', animalObjectArray);
+      } else {
+        localStorage.clear();
+      }
+    }
+  }
   //get name and match to local storage, remove, refresh array, refresh local storage
-
+  console.log(event);
 }
 
 //document onload function
 function renderPage() {
   var submit = document.getElementById('userInputForm');
-  onLoad();
   submit.addEventListener('submit', submitForm);
   createDeleteForm();
 }
-
+onLoad();
 renderPage();
