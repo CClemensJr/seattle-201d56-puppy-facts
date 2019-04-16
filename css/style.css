@@ -159,11 +159,12 @@
         width: 25em;
     }
 
-    footer section p {
-        background: red;
-        padding-top: 2em;
-        /* display: block;
-        float: left; */
+    footer section ul {
+        height: 15em;
+    }
+
+    footer section ul li {
+        line-height: 5em;
     }
 
     /* footer ul {
