@@ -1,8 +1,6 @@
 'use strict';
 
-var colorsArray = ['multicolored', 'white', 'tan / brown', 'black', 'grey'];
-var animalTypeArray = ['dog', 'cat', 'pig', 'bird', 'rabbit'];
-var animalObjectArray;
+var animalObjectArray = [];
 //onLoad();
 
 var submit = document.getElementById('userInputForm');

@@ -2,7 +2,7 @@
 jen shin
 15 April 2019
 Animal object constructor, localStorage instantiation for Animal Farm website
-app.jsgit 
+app.js
 */
 
 //move these two arrays to add pet page
@@ -33,6 +33,8 @@ function onLoad() {
     for (let i = 0; i < parsedAnimals.length; i++) {
       new Animal(parsedAnimals[i].name, parsedAnimals[i].type, parsedAnimals[i].age, parsedAnimals[i].color);
     }
+  } else {
+    animalObjectArray = [];
   }
 }
 
