@@ -144,7 +144,7 @@
     footer {
         background: black;
         color: white;
-        height: 20em;
+        height: 25em;
         /* line-height: 20em; */
     }
 
@@ -159,27 +159,31 @@
         width: 25em;
     }
 
-    footer section ul {
+    footer section ul li i {
+        color: white;
+    }
+
+    footer section:first-of-type ul {
+        background: red;
         height: 15em;
     }
 
-    footer section ul li {
+    footer section:first-of-type ul li {
         line-height: 5em;
     }
 
-    /* footer ul {
-        float: left;
-    } */
-
-
-    /* footer ul li:first-of-type {
-        float: left;
+    footer section:first-of-type ul li a{
+        color: white;
+    }
+    
+    footer section:last-of-type ul {
+        background: blue;
+        display: block;
+        margin-top: .1em;
     }
 
-    footer ul li:last-of-type {
-        float: right;
-    } */
 
-    footer ul li i {
-        color: white;
+    footer section:last-of-type ul li:last-of-type {
+        background: green;
+        margin-top: 2em;
     }
