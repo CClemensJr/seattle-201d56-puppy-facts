@@ -1,13 +1,8 @@
 'use strict';
 
 var animalObjectArray = [];
-<<<<<<< HEAD
 var deleteForm;
-
-=======
-onLoad();
->>>>>>> 29c14fe8fb59781b3ca9cc2c835fef0e07aea68b
-var submit = document.getElementById('userInputForm');
+var deleteButton;
 
 function submitForm(event){
   event.preventDefault();
@@ -19,6 +14,7 @@ function submitForm(event){
 
   new Animal(newName,newType, newAge, newColor);
   localStorage.setItem('animalObjectArray', JSON.stringify(animalObjectArray));
+  createDeleteForm();
 }
 
 //creates a form to delete an animal if localStorage has info
@@ -33,6 +29,7 @@ function createDeleteForm() {
   if(animalObjectArray.length > 0) {
     deleteForm = document.createElement('form');
     deleteForm.id = 'deleteAnimal';
+    createLabelForDeleteForm();
     createSelectOptions();
     deleteForm.addEventListener('submit', deleteAnimal);
     document.body.appendChild(deleteForm);
@@ -55,6 +52,17 @@ function createSelectOptions() {
     select.options[i] = new Option(`${animalObjectArray[i].name}`, `${animalObjectArray[i].name}`);
   }
   deleteForm.appendChild(select);
+  //add button after select created
+  createDeleteButton();
+  deleteForm.appendChild(deleteButton);
+}
+
+//helper function
+function createDeleteButton() {
+  deleteButton = document.createElement('button');
+  deleteButton.id = 'delete';
+  deleteButton.value = 'delete';
+  deleteButton.innerText = 'Delete Animal';
 }
 
 //function that deletes an animal
@@ -63,6 +71,12 @@ function deleteAnimal() {
 
 }
 
-onLoad();
-submit.addEventListener('submit', submitForm);
-createDeleteForm();
+//document onload function
+function renderPage() {
+  var submit = document.getElementById('userInputForm');
+  onLoad();
+  submit.addEventListener('submit', submitForm);
+  createDeleteForm();
+}
+
+renderPage();
