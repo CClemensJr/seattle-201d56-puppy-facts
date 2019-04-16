@@ -1,0 +1,81 @@
+/*****************
+* Navbar 
+***/
+header {
+  background: black;
+  height: 5em;
+  left: 0;
+  line-height: 5em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header nav {
+  margin: 0 auto;
+  width: 60%;
+}
+
+header nav h1 {
+  color: white;
+  float: left;
+}
+
+header nav ul {
+  float: right;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  color: white;
+  display: block;
+  padding: 0 0.5em 0 0.5em;
+}
+/*****************
+    * about-us page
+    ***/
+  ul li img{
+      width: 300px;
+      height: 350px;
+      
+  }
+  #jen #charles #kush #yuan{
+      display: inline-block;
+      /* margin-top: 100px; */
+  }
+
+  #jen{
+      margin-top: 100px;
+      margin-left: 100px;
+      vertical-align: top;
+      width:21%;
+      /* float:left; */
+  } 
+
+  #charles{
+      margin-top: 30px;
+      margin-left: 100px;
+      vertical-align: top;
+
+  }
+  #kush{
+      margin-left: 100px;
+      margin-top: 30px;
+      vertical-align: top;
+
+  }
+  #yuan{
+      margin-top: 30px;
+      margin-left: 100px;
+      vertical-align: top;
+
+  }
+  h3{
+    margin-top: 100px;
+    margin-left: 30px;
+    display: inline-block;
+    width:46%;
+  } 
