@@ -15,6 +15,7 @@ function submitForm(event){
 
   new Animal(newName,newType, newAge, newColor);
   localStorage.setItem('animalObjectArray', JSON.stringify(animalObjectArray));
+  location.reload();
 }
 
 //creates a form to delete an animal if localStorage has info
@@ -74,12 +75,14 @@ function deleteAnimal(event) {
   for (let i = 0; i < animalObjectArray.length; i++) {
     if(selectedOption === animalObjectArray[i].name) {
       console.log('hooray! your index is: ', i);
-      animalObjectArray.splice(i);
+      animalObjectArray.splice(i, 1);
+      console.table(animalObjectArray);
       if(animalObjectArray.length) {
         localStorage.setItem('animalObjectArray', JSON.stringify(animalObjectArray));
       } else {
         localStorage.clear();
       }
+      location.reload();
     }
   }
   //get name and match to local storage, remove, refresh array, refresh local storage
