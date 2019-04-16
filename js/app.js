@@ -7,9 +7,6 @@ app.jsgit
 
 //move these two arrays to add pet page
 'use strict';
-
-var colorsArray = ['multicolored', 'white', 'tan / brown', 'black', 'grey'];
-var animalTypeArray = ['dog', 'cat', 'pig', 'bird', 'rabbit'];
 var animalObjectArray = [];
 
 function Animal(name, type, age, color) {
@@ -32,7 +29,10 @@ function onLoad() {
   var parsedAnimals = JSON.parse(localAnimals);
 
   if (parsedAnimals && parsedAnimals.length) {
-    animalObjectArray = parsedAnimals;
+    //make all objects from localStorage into Animal objects
+    for (let i = 0; i < parsedAnimals.length; i++) {
+      new Animal(parsedAnimals[i].name, parsedAnimals[i].type, parsedAnimals[i].age, parsedAnimals[i].color);
+    }
   }
 }
 
