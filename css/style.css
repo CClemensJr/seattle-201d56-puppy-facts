@@ -30,8 +30,11 @@
     }
 
     header nav h1 {
-        color: white;
         float: left;
+    }
+
+    header nav h1 a {
+        color: white;
     }
 
     header nav ul {
@@ -52,6 +55,10 @@
 /*****************
 * Main 
 ***/
+    main {
+        margin-bottom: 5em;
+    }
+
     #home, #info {
         margin-top: 12vh;
         height: 100vh;
@@ -97,7 +104,6 @@
     /*****************
     * Info Section 
     ***/
-        
         #info h1 {
             display: block;
             margin: 0 auto;
@@ -132,3 +138,49 @@
         }
 
 
+/*****************
+* Footer 
+***/
+    footer {
+        background: black;
+        color: white;
+        height: 20em;
+        /* line-height: 20em; */
+    }
+
+    footer section {
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    footer section img {
+        float: right;
+        margin-top: .75em;
+        width: 25em;
+    }
+
+    footer section ul li i {
+        color: white;
+    }
+
+    footer section:first-of-type ul {
+        height: 15em;
+    }
+
+    footer section:first-of-type ul li {
+        line-height: 2.5em;
+    }
+
+    footer section:first-of-type ul li a{
+        color: white;
+    }
+
+    footer section:last-of-type {
+        margin-top: 2.75em;
+    }
+
+
+    footer section:last-of-type ul li:last-of-type {
+        background: green;
+        margin-top: 2em;
+    }
