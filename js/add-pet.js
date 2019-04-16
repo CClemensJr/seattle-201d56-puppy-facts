@@ -1,8 +1,12 @@
 'use strict';
 
 var animalObjectArray = [];
+<<<<<<< HEAD
 var deleteForm;
 
+=======
+onLoad();
+>>>>>>> 29c14fe8fb59781b3ca9cc2c835fef0e07aea68b
 var submit = document.getElementById('userInputForm');
 
 function submitForm(event){
