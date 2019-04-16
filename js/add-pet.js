@@ -1,7 +1,7 @@
 'use strict';
 
 var animalObjectArray = [];
-
+onLoad();
 var submit = document.getElementById('userInputForm');
 
 function submitForm(event){
