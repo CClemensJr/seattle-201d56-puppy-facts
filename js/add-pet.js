@@ -76,7 +76,7 @@ function deleteAnimal(event) {
       console.log('hooray! your index is: ', i);
       animalObjectArray.splice(i);
       if(animalObjectArray.length) {
-        localStorage.setItem('animalObjectArray', animalObjectArray);
+        localStorage.setItem('animalObjectArray', JSON.stringify(animalObjectArray));
       } else {
         localStorage.clear();
       }
