@@ -55,6 +55,10 @@
 /*****************
 * Main 
 ***/
+    main {
+        margin-bottom: 5em;
+    }
+    
     #home, #info {
         margin-top: 12vh;
         height: 100vh;
@@ -100,6 +104,9 @@
     /*****************
     * Info Section 
     ***/
+        /* #info {
+            margin-bottom: 5em;
+        } */
         
         #info h1 {
             display: block;
@@ -142,24 +149,30 @@
         background: black;
         color: white;
         height: 20em;
-        line-height: 20em;
-    }
-
-    footer ul {
-        float: left;
+        /* line-height: 20em; */
     }
 
     footer section {
-        float: right;
+        margin: 0 auto;
+        width: 50%;
     }
 
-    footer ul li:first-of-type {
+    footer section img {
+        float: right;
+        width: 25em;
+    }
+    /* footer ul {
+        float: left;
+    } */
+
+
+    /* footer ul li:first-of-type {
         float: left;
     }
 
     footer ul li:last-of-type {
         float: right;
-    }
+    } */
 
     footer ul li i {
         color: white;
