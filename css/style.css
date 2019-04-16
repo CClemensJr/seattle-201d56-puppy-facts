@@ -58,7 +58,7 @@
     main {
         margin-bottom: 5em;
     }
-    
+
     #home, #info {
         margin-top: 12vh;
         height: 100vh;
@@ -104,10 +104,6 @@
     /*****************
     * Info Section 
     ***/
-        /* #info {
-            margin-bottom: 5em;
-        } */
-        
         #info h1 {
             display: block;
             margin: 0 auto;
@@ -154,13 +150,21 @@
 
     footer section {
         margin: 0 auto;
-        width: 50%;
+        width: 55%;
     }
 
     footer section img {
         float: right;
+        margin-top: .5em;
         width: 25em;
     }
+
+    footer section p {
+        background: red;
+        display: block;
+        float: left;
+    }
+
     /* footer ul {
         float: left;
     } */
