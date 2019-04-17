@@ -91,6 +91,11 @@
         padding: 0 0.5em 0 0.5em;
     }
 
+    header nav ul li a:hover {
+        background-color: #00adb5;
+        border-bottom: .1em solid #ff5722;
+        color: #303841;
+    }
 
 /*****************
 * Main 
