@@ -241,8 +241,7 @@
 * Footer 
 ***/
     body footer {
-        background: black;
-        color: white;
+        background: #303841;
         height: 20em;
         left: 0;
         position: absolute;
@@ -262,7 +261,8 @@
     }
 
     footer section ul li i {
-        color: white;
+        color: #00adb5;
+        padding: 0 0.5em;
     }
 
     footer section:first-of-type ul {
@@ -270,11 +270,12 @@
     }
 
     footer section:first-of-type ul li {
+        color: #ff5722;
         line-height: 2.5em;
     }
 
     footer section:first-of-type ul li a{
-        color: white;
+        color: #ff5722;
     }
 
     footer section:last-of-type {
@@ -283,6 +284,5 @@
 
 
     footer section:last-of-type ul li:last-of-type {
-        background: green;
         margin-top: 2em;
     }
