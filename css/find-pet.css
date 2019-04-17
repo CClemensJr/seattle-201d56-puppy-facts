@@ -45,11 +45,18 @@ header nav ul li a {
 /*******
 body
 *****/
-
+main h1{
+  margin: 100px 0px 0px 30px;
+}
+div{
+  width: 0px;
+  display: flex;
+  flex-direction: row;
+}
 img{
   width:400px;
   height: 400px;
-  margin: 100px 30px 30px 400px;
+  margin: 30px 30px 30px 30px;
 }
 div ul li{
   display: table;
@@ -59,5 +66,5 @@ div ul li{
 
 }
 div ul li:nth-last-child(-n+4){
-  margin-left: 500px;
+  margin-left: 130px;
 }
