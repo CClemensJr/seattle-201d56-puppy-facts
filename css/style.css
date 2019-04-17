@@ -125,21 +125,27 @@
         }
         
         #home h1 {
+            color: rgba(238, 238, 238, .5);
             display: block;
+            font-size: 3em;
             margin: 0 auto;
-            padding-bottom: 6em;
-            padding-top: 6em;
-            text-align: center;
+            padding: 2em 0;
+            text-align: left;
+            -webkit-text-stroke-color: #303841;
+            -webkit-text-stroke-width: 0.05em;
             width: 50%;
             z-index: 1000;
         }
 
         #home h2 {
+            color: rgba(238, 238, 238, .5);
             display: block;
+            font-size: 2em;
             margin: 0 auto;
-            padding-bottom: 3em;
-            padding-top: 3em;
-            text-align: center;
+            padding: 2em 0;
+            text-align: left;
+            -webkit-text-stroke-color: #303841;
+            -webkit-text-stroke-width: 0.05em;
             width: 50%;
             z-index: 1000;
         }
