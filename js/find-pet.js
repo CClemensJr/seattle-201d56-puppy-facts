@@ -3,13 +3,12 @@
 var animalObjectArray = [];
 var ulEl;
 var liEl;
-
-onLoad();
+var typeFilter;
 
 function render(){
   var divEl = document.getElementById('elements');
 
-  for (var i = 0; i < animalObjectArray.length; i ++){
+  for (var i = 0; i < animalObjectArray.length; i++){
     console.log(animalObjectArray[i]);
 
     ulEl = document.createElement('ul');
@@ -19,31 +18,25 @@ function render(){
     imgEl.src = '../assets/imganimals/' + animalObjectArray[i].type + '.jpg';
     liEl.appendChild(imgEl);
     ulEl.appendChild(liEl);
-
+    //create li elements with each object property
     createLi(i, 'Name:', 'name');
     createLi(i, 'Animal Type:', 'type');
     createLi(i, 'Age:', 'age');
     createLi(i, 'Color:', 'color');
 
-    /*
-    var liEl2 = document.createElement('li');
-    liEl2.innerText = 'Name: ' + animalObjectArray[i].name;
-    ulEl.appendChild(liEl2);
-
-    var liEl3 = document.createElement('li');
-    liEl3.innerText = 'Breed: ' + animalObjectArray[i].type;
-    ulEl.appendChild(liEl3);
-
-    var liEl4 = document.createElement('li');
-    liEl4.innerText = 'Age: ' + animalObjectArray[i].age;
-    ulEl.appendChild(liEl4);
-
-    var liEl5 = document.createElement('li');
-    liEl5.innerText = 'Color: ' + animalObjectArray[i].color;
-    ulEl.appendChild(liEl5);
-    */
     divEl.appendChild(ulEl);
   }
+}
+
+//function to show only images by type
+function filter(event) {
+  event.preventDefault();
+  //get selected option value
+  var select = document.getElementById('typeList');
+  var selectedOption = select.options[select.selectedIndex].value;
+  console.log(selectedOption, ' here is the selected option value');
+  typeFilter = selectedOption;
+  render();
 }
 
 //helper function to create li - jen
@@ -52,5 +45,11 @@ function createLi(i, text, property) {
   liEl.innerText = `${text} ` + animalObjectArray[i][property];
   ulEl.appendChild(liEl);
 }
+
+onLoad();
+
+//get button for select form, attach event handler
+var filterByType = document.getElementById('selectByType');
+filterByType.addEventListener('submit', filter);
 
 render();

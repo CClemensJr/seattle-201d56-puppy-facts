@@ -7,6 +7,12 @@
   <title>Find a Pet</title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/find-pet.css">
+  <style>
+  /*temporary for testing - delete style section after overall style sheet updated*/
+    select {
+      margin: 100px 20px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -22,7 +28,19 @@
       </nav>
   </header>
   <main>
-    <h1>Here is a list of all the available animals at Animal Farm.<br /> Use to the dropdown selection to filter by animal type.</h1>
+    <h1>Here are all the available animals at The Animal Farm.</h1> 
+    <h3>Use the dropdown selection to filter by animal type.</h3>
+    <form id="selectByType">
+      <label for="typeList">Filter by Animal Type:</label>
+      <select id="typeList">
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="pig">Pig</option>
+        <option value="bird">Bird</option>
+        <option value="rabbit">Rabbit</option>
+      </select>
+      <button>Submit</button>  
+    </form>
     <div id="elements"></div>
   </main>
   <footer></footer>
