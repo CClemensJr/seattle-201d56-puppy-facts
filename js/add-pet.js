@@ -36,7 +36,7 @@ function submitForm(event){
     // }
     for(var i=0; i<animalObjectArray.length; i++){
       var check = JSON.stringify(duplicateObject) === JSON.stringify(animalObjectArray[i]);
-      if(check) {
+      if(!check) {
         alert('duplicate');
         break;
       }
@@ -49,7 +49,7 @@ function submitForm(event){
     new Animal(newName,newType, newAge, newColor);
 
     localStorage.setItem('animalObjectArray', JSON.stringify(animalObjectArray));
-    location.reload();
+    //location.reload();
   }
 }
 
