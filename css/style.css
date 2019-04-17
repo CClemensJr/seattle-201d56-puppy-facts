@@ -7,7 +7,7 @@
  */
 
  @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Arima+Madurai:100|Fredoka+One|Poiret+One');
-
+ @import url('https://fonts.googleapis.com/css?family=Righteous');
 
 
 /*****************
@@ -107,8 +107,9 @@
     }
 
     #home, #info {
-        margin-top: 12vh;
+        font-family: 'Righteous', cursive;
         height: 100vh;
+        margin-top: 12vh;
         width: 100%;
     }
 
