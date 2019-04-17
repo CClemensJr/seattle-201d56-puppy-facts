@@ -132,21 +132,3 @@ function renderPage() {
 }
 onLoad();
 renderPage();
-
-
-//function to check duplicate entries
-//https://www.youtube.com/watch?v=GgfIby_T8yg
-function isEqual(object1, object2){
-  var object1keys = Object.keys(object1);
-  var object2keys = Object.keys(object2);
-
-  if(object1keys.length !==object2keys.length){
-    return false;
-  }
-
-  for(var i of object1keys)
-    if(object1[i] !== object2[i]){
-      return false;
-    }
-  return true;
-}
