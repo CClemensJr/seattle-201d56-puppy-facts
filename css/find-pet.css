@@ -1,0 +1,64 @@
+/*****************
+* Navbar 
+***/
+body a {
+  color: black;
+  text-decoration: none;
+}
+
+header {
+  background: black;
+  height: 5em;
+  left: 0;
+  line-height: 5em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header nav {
+  margin: 0 auto;
+  width: 60%;
+}
+
+header nav h1 {
+  float: left;
+}
+
+header nav h1 a {
+  color: white;
+}
+
+header nav ul {
+  float: right;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  color: white;
+  display: block;
+  padding: 0 0.5em 0 0.5em;
+}
+
+/*******
+body
+*****/
+img{
+  width:400px;
+  height: 400px;
+  margin: 100px 30px 30px 400px;
+}
+ul li{
+  display: table;
+  padding: 10px;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+div ul li:nth-last-child(-n+4){
+  margin-left: 500px;
+
+}
