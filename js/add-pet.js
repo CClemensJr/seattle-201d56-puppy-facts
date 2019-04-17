@@ -4,18 +4,53 @@ var animalObjectArray = [];
 var deleteForm;
 var deleteButton;
 var select;
+var duplicateObject = {
+  name: '',
+  type: '',
+  age: '',
+  color: ''
+}
 
 function submitForm(event){
   event.preventDefault();
-  console.log(event);
-  var newName = event.target.petName.value;
-  var newType = event.target.petType.value;
-  var newAge = event.target.petAge.value;
-  var newColor = event.target.petColor.value;
+  if(animalObjectArray.length === 0){
+    var newName = event.target.petName.value;
+    var newType = event.target.petType.value;
+    var newAge = event.target.petAge.value;
+    var newColor = event.target.petColor.value;
 
-  new Animal(newName,newType, newAge, newColor);
-  localStorage.setItem('animalObjectArray', JSON.stringify(animalObjectArray));
-  location.reload();
+    new Animal(newName,newType, newAge, newColor);
+
+    localStorage.setItem('animalObjectArray', JSON.stringify(animalObjectArray));
+    location.reload();
+  }
+  else {
+    duplicateObject.name = event.target.petName.value;
+    duplicateObject.type = event.target.petType.value;
+    duplicateObject.age = event.target.petAge.value;
+    duplicateObject.color = event.target.petColor.value;
+
+    // if (isEqual(duplicateObject, animalObjectArray)){
+    //   alert('duplicate entry!!!');
+    //   console.log('enters duplicate function');
+    // }
+    for(var i=0; i<animalObjectArray.length; i++){
+      var check = JSON.stringify(duplicateObject) === JSON.stringify(animalObjectArray[i]);
+      if(check) {
+        alert('duplicate');
+        break;
+      }
+    }
+    console.log('enters non duplicate function');
+    newName = event.target.petName.value;
+    newType = event.target.petType.value;
+    newAge = event.target.petAge.value;
+    newColor = event.target.petColor.value;
+    new Animal(newName,newType, newAge, newColor);
+
+    localStorage.setItem('animalObjectArray', JSON.stringify(animalObjectArray));
+    location.reload();
+  }
 }
 
 //creates a form to delete an animal if localStorage has info
@@ -97,3 +132,21 @@ function renderPage() {
 }
 onLoad();
 renderPage();
+
+
+//function to check duplicate entries
+//https://www.youtube.com/watch?v=GgfIby_T8yg
+function isEqual(object1, object2){
+  var object1keys = Object.keys(object1);
+  var object2keys = Object.keys(object2);
+
+  if(object1keys.length !==object2keys.length){
+    return false;
+  }
+
+  for(var i of object1keys)
+    if(object1[i] !== object2[i]){
+      return false;
+    }
+  return true;
+}
