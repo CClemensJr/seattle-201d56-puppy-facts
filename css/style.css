@@ -154,8 +154,12 @@
         }
 
         #info section {
+            background: red;
             margin: 0 auto;
-            width: 90%;
+            height: 45em;
+            position: relative;
+            width: 50%;
+            z-index: -1000;
         }
 
         #info section div {
@@ -163,30 +167,65 @@
             /* display: block;
             margin: 0 auto; */
             /* width: 30%; */
-            height: 20em;
-            width: 20em;
+            height: 15em;
+            width: 15em;
         }
 
         #info section div:nth-of-type(1) {
             background-image: url("./../assets/images/puppy.jpg");
             background-size: cover;
+            left: 0;
+            position: absolute;
+            top: 0;
         }
 
         #info section div:nth-of-type(2) {
             background-image: url("./../assets/images/bunny.jpg");
             background-size: cover;
+            /* float: right; */
+            left: 24.5em;
+            position: absolute;
+            top: 15em;
         }
 
         #info section div:nth-of-type(3) {
             background-image: url("./../assets/images/kitten.jpg");
             background-size: cover;
+            left: 0em;
+            position: absolute;
+            top: 30em;
         }
 
         #info section ol {
             border: .5em solid black;
-            display: block;
-            margin: 0 auto;
-            width: 75%;
+            /* display: block; */
+            height: 15em;
+            width: 24.5em;
+            /* width: 20%; */
+        }
+
+        #info section ol:nth-of-type(1) {
+            /* float: right; */
+            background: purple;
+            left: 15em;
+            position: absolute;
+            top: 0em;
+        }
+
+        #info section ol:nth-of-type(2) {
+            /* float: left; */
+            background: blue;
+            left: 0em;
+            position: absolute;
+            top: 15em;
+        }
+
+        #info section ol:nth-of-type(3) {
+            /* float: right; */
+            background: green;
+            left: 15em;
+            position: absolute;
+            top: 30em;
         }
 
         #info section ol li {
@@ -204,7 +243,7 @@
         height: 20em;
         left: 0;
         position: absolute;
-        top: 175em;
+        top: 125em;
         width: 100%;
         /* line-height: 20em; */
     }
