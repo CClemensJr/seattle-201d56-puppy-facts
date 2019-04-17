@@ -155,13 +155,13 @@
 
         #info section figure {
             border: .5em solid black;
-            display: inline-block;
+            display: block;
             margin: 0 auto;
-            width: 33%;
+            width: 75%;
         }
 
-        #info section figure image {
-            background: black;
+        #info section figure img {
+            width: 10em;
         }
 
         #info section figure figcaption {
