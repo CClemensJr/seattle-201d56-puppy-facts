@@ -251,10 +251,11 @@
 
     footer section {
         margin: 0 auto;
-        width: 60%;
+        width: 70%;
     }
 
-    footer section img {
+    footer section:first-of-type img {
+        border: 1px solid black;
         float: right;
         margin-top: .75em;
         width: 25em;
@@ -267,7 +268,7 @@
     footer section:first-of-type ul li {
         color: #ff5722;
         font-family: 'Arima Madurai', cursive;
-        font-size: 1em;
+        font-size: .95em;
         line-height: 2.5em;
     }
 
