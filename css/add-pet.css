@@ -61,3 +61,7 @@ button:hover {
   margin-top: 20px;
 }
 
+header nav h1 {
+  float: left;
+  color: white;
+}
