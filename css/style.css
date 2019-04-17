@@ -69,17 +69,37 @@
 ***/
     main {
         margin-bottom: 5em;
+        width: 100%;
     }
 
     #home, #info {
         margin-top: 12vh;
         height: 100vh;
-        width: 100vw;
+        width: 100%;
     }
 
     /*****************
     * Home Section 
     ***/
+        #home #bgVid {
+            /* margin: 0 auto;
+            max-height: 100%;
+            max-width: 100%; */
+            /* position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100vw; 
+            min-height: 100vh; */
+            /* margin-top: -1vh;
+            height: 90vh;
+            width: 100%;
+            z-index: -1000; */
+            left: 0;
+            position: absolute;
+            top: 5em;
+            width: 100%;
+            z-index: -10000;
+        }
         
         #home h1 {
             display: block;
@@ -88,6 +108,7 @@
             padding-top: 6em;
             text-align: center;
             width: 50%;
+            z-index: 1000;
         }
 
         #home h2 {
@@ -97,6 +118,7 @@
             padding-top: 3em;
             text-align: center;
             width: 50%;
+            z-index: 1000;
         }
 
         #home a {
@@ -108,6 +130,7 @@
             padding-top: .25em;
             text-align: center;
             width: 50%;
+            z-index: 1000;
         }
 
 
