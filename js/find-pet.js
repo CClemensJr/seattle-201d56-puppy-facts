@@ -1,6 +1,9 @@
 'use strict';
 
 var animalObjectArray = [];
+var ulEl;
+var liEl;
+
 onLoad();
 
 function render(){
@@ -9,14 +12,20 @@ function render(){
   for (var i = 0; i < animalObjectArray.length; i ++){
     console.log(animalObjectArray[i]);
 
-    var ulEl = document.createElement('ul');
+    ulEl = document.createElement('ul');
     ulEl.id = animalObjectArray[i].type;
-    var liEl = document.createElement('li');
+    liEl = document.createElement('li');
     var imgEl = document.createElement('img');
     imgEl.src = '../assets/imganimals/' + animalObjectArray[i].type + '.jpg';
     liEl.appendChild(imgEl);
     ulEl.appendChild(liEl);
 
+    createLi(i, 'Name:', 'name');
+    createLi(i, 'Animal Type:', 'type');
+    createLi(i, 'Age:', 'age');
+    createLi(i, 'Color:', 'color');
+
+    /*
     var liEl2 = document.createElement('li');
     liEl2.innerText = 'Name: ' + animalObjectArray[i].name;
     ulEl.appendChild(liEl2);
@@ -32,9 +41,16 @@ function render(){
     var liEl5 = document.createElement('li');
     liEl5.innerText = 'Color: ' + animalObjectArray[i].color;
     ulEl.appendChild(liEl5);
-
+    */
     divEl.appendChild(ulEl);
-
   }
 }
+
+//helper function to create li - jen
+function createLi(i, text, property) {
+  liEl = document.createElement('li');
+  liEl.innerText = `${text} ` + animalObjectArray[i][property];
+  ulEl.appendChild(liEl);
+}
+
 render();
