@@ -1,8 +1,29 @@
+/*
+    colors:
+    charcoal: #303841
+    neon blue: #00adb5
+    silver: #eeeeee
+    orange: #ff5722
+ */
+
+ @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Arima+Madurai:100|Fredoka+One|Poiret+One');
+
+
+
 /*****************
 * Default Styling 
 ***/
     * {
         box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        height: 100%;
+        width: 100%;
     }
 
     body a {
@@ -15,28 +36,44 @@
 * Navbar 
 ***/
     header {
-        background: black;
+        background: #303841;
         height: 5em;
         left: 0;
         line-height: 5em;
         position: fixed;
         top: 0;
         width: 100%;
+        z-index: 10000;
     }
 
-    header nav {
+    header section {
         margin: 0 auto;
-        width: 60%;
+        width: 75%;
     }
 
-    header nav h1 {
+    header h1 {
         float: left;
     }
-
-    header nav h1 a {
-        color: white;
+    
+    header section h1 a {
+        color: #00adb5;
+        font-family: 'Fredoka One', cursive;
+        font-size: 3em;
+        -webkit-text-stroke-color: #ff5722;
+        -webkit-text-stroke-width: 0.05em;
     }
 
+    header section h1 a:hover {
+        color: #ff5722;
+        font-family: 'Fredoka One', cursive;
+        font-size: 3em;
+        -webkit-text-stroke-color: #00adb5;
+        -webkit-text-stroke-width: 0.05em;
+    }
+    
+    header nav {
+        float: right;
+    }
     header nav ul {
         float: right;
     }
@@ -46,28 +83,44 @@
     }
 
     header nav ul li a {
-        color: white;
+        color: #eeeeee;
         display: block;
+        font-family: 'Poiret One', cursive;
+        height: 5em;
+        line-height: 5em;
         padding: 0 0.5em 0 0.5em;
     }
 
+    header nav ul li a:hover {
+        background-color: #00adb5;
+        border-bottom: .1em solid #ff5722;
+        color: #303841;
+    }
 
 /*****************
 * Main 
 ***/
     main {
         margin-bottom: 5em;
+        width: 100%;
     }
 
     #home, #info {
         margin-top: 12vh;
         height: 100vh;
-        width: 100vw;
+        width: 100%;
     }
 
     /*****************
     * Home Section 
     ***/
+        #home #bgVid {
+            left: 0;
+            position: absolute;
+            top: 5em;
+            width: 100%;
+            z-index: -10000;
+        }
         
         #home h1 {
             display: block;
@@ -76,6 +129,7 @@
             padding-top: 6em;
             text-align: center;
             width: 50%;
+            z-index: 1000;
         }
 
         #home h2 {
@@ -85,6 +139,7 @@
             padding-top: 3em;
             text-align: center;
             width: 50%;
+            z-index: 1000;
         }
 
         #home a {
@@ -96,6 +151,7 @@
             padding-top: .25em;
             text-align: center;
             width: 50%;
+            z-index: 1000;
         }
 
 
@@ -115,37 +171,83 @@
 
         #info section {
             margin: 0 auto;
-            width: 90%;
+            height: 45em;
+            position: relative;
+            width: 50%;
+            z-index: -1000;
         }
 
-        #info section figure {
+        #info section div {
             border: .5em solid black;
-            display: inline-block;
-            margin: 0 auto;
-            width: 33%;
+            height: 15em;
+            width: 15em;
         }
 
-        #info section figure image {
-            background: black;
+        #info section div:nth-of-type(1) {
+            background-image: url("./../assets/images/puppy.jpg");
+            background-size: cover;
+            left: 0;
+            position: absolute;
+            top: 0;
         }
 
-        #info section figure figcaption {
-            text-align: center;
+        #info section div:nth-of-type(2) {
+            background-image: url("./../assets/images/bunny.jpg");
+            background-size: cover;
+            left: 24.5em;
+            position: absolute;
+            top: 15em;
         }
 
-        #info section figure figcaption ol li {
+        #info section div:nth-of-type(3) {
+            background-image: url("./../assets/images/kitten.jpg");
+            background-size: cover;
+            left: 0em;
+            position: absolute;
+            top: 30em;
+        }
+
+        #info section ol {
+            border: .5em solid black;
+            height: 15em;
+            width: 24.5em;
+        }
+
+        #info section ol:nth-of-type(1) {
+            left: 15em;
+            position: absolute;
+            top: 0em;
+        }
+
+        #info section ol:nth-of-type(2) {
+            left: 0em;
+            position: absolute;
+            top: 15em;
+        }
+
+        #info section ol:nth-of-type(3) {
+            left: 15em;
+            position: absolute;
+            top: 30em;
+        }
+
+        #info section ol li {
             padding: .25em;
+            text-align: center;
         }
 
 
 /*****************
 * Footer 
 ***/
-    footer {
+    body footer {
         background: black;
         color: white;
         height: 20em;
-        /* line-height: 20em; */
+        left: 0;
+        position: absolute;
+        top: 125em;
+        width: 100%;
     }
 
     footer section {
