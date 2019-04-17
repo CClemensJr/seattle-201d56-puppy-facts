@@ -32,7 +32,7 @@
 * Navbar 
 ***/
     header {
-        background: black;
+        background: #303841;
         height: 5em;
         left: 0;
         line-height: 5em;
@@ -41,12 +41,16 @@
         width: 100%;
     }
 
-    header nav {
+    header section {
         margin: 0 auto;
         width: 60%;
     }
 
-    header nav h1 {
+    header nav {
+        float: right;
+    }
+
+    header h1 {
         float: left;
     }
 
