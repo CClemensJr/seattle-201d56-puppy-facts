@@ -38,6 +38,7 @@ function submitForm(event){
       var check = JSON.stringify(duplicateObject) === JSON.stringify(animalObjectArray[i]);
       if(check) {
         alert('duplicate');
+        animalObjectArray.splice(i,1);
         break;
       }
     }
