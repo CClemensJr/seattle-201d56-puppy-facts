@@ -158,16 +158,28 @@
             width: 90%;
         }
 
-        #info section figure {
+        #info section div {
             border: .5em solid black;
             /* display: block;
             margin: 0 auto; */
-            width: 30%;
+            /* width: 30%; */
+            height: 20em;
+            width: 20em;
         }
 
-        #info section figure img {
-            height: auto;
-            width: 100%;
+        #info section div:nth-of-type(1) {
+            background-image: url("./../assets/images/puppy.jpg");
+            background-size: cover;
+        }
+
+        #info section div:nth-of-type(2) {
+            background-image: url("./../assets/images/bunny.jpg");
+            background-size: cover;
+        }
+
+        #info section div:nth-of-type(3) {
+            background-image: url("./../assets/images/kitten.jpg");
+            background-size: cover;
         }
 
         #info section ol {
