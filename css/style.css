@@ -17,6 +17,11 @@
         box-sizing: border-box;
     }
 
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
     body a {
         color: black;
         text-decoration: none;
@@ -155,31 +160,40 @@
 
         #info section figure {
             border: .5em solid black;
+            /* display: block;
+            margin: 0 auto; */
+            width: 30%;
+        }
+
+        #info section figure img {
+            height: auto;
+            width: 100%;
+        }
+
+        #info section ol {
+            border: .5em solid black;
             display: block;
             margin: 0 auto;
             width: 75%;
         }
 
-        #info section figure img {
-            width: 10em;
-        }
-
-        #info section figure figcaption {
-            text-align: center;
-        }
-
-        #info section figure figcaption ol li {
+        #info section ol li {
             padding: .25em;
+            text-align: center;
         }
 
 
 /*****************
 * Footer 
 ***/
-    footer {
+    body footer {
         background: black;
         color: white;
         height: 20em;
+        left: 0;
+        position: absolute;
+        top: 175em;
+        width: 100%;
         /* line-height: 20em; */
     }
 
