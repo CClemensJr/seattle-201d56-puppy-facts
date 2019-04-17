@@ -45,9 +45,7 @@ header nav ul li a {
 /*******
 body
 *****/
-main h1{
-  margin: 100px 0px 0px 30px;
-}
+
 div{
   display: flex;
   flex-direction: row;
