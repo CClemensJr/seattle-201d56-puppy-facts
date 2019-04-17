@@ -23,11 +23,9 @@ header nav {
 
 header nav h1 {
   float: left;
-}
-
-header nav h1 a {
   color: white;
 }
+
 
 header nav ul {
   float: right;
@@ -43,15 +41,17 @@ header nav ul li a {
   padding: 0 0.5em 0 0.5em;
 }
 
+
 /*******
 body
 *****/
+
 img{
   width:400px;
   height: 400px;
   margin: 100px 30px 30px 400px;
 }
-ul li{
+div ul li{
   display: table;
   padding: 10px;
   font-size: large;
@@ -60,5 +60,4 @@ ul li{
 }
 div ul li:nth-last-child(-n+4){
   margin-left: 500px;
-
 }
