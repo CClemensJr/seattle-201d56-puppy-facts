@@ -38,3 +38,12 @@ button:hover {
   color: white;
 }
 
+#deleteAnimal select {
+  display: block;
+  margin-top: 20px;
+}
+
+#delete {
+  margin-top: 20px;
+}
+
