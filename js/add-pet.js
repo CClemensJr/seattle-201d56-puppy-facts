@@ -30,22 +30,26 @@ function submitForm(event){
     duplicateObject.age = event.target.petAge.value;
     duplicateObject.color = event.target.petColor.value;
 
-    if (!isEqual(duplicateObject, animalObjectArray)){
-      alert('duplicate entry!!!');
-      console.log('enters duplicate function');
+    // if (isEqual(duplicateObject, animalObjectArray)){
+    //   alert('duplicate entry!!!');
+    //   console.log('enters duplicate function');
+    // }
+    for(var i=0; i<animalObjectArray.length; i++){
+      var check = JSON.stringify(duplicateObject) === JSON.stringify(animalObjectArray[i]);
+      if(check) {
+        alert('duplicate');
+        break;
+      }
     }
-    else {
-      console.log('enters non duplicate function');
-      newName = event.target.petName.value;
-      newType = event.target.petType.value;
-      newAge = event.target.petAge.value;
-      newColor = event.target.petColor.value;
-  
-      new Animal(newName,newType, newAge, newColor);
+    console.log('enters non duplicate function');
+    newName = event.target.petName.value;
+    newType = event.target.petType.value;
+    newAge = event.target.petAge.value;
+    newColor = event.target.petColor.value;
+    new Animal(newName,newType, newAge, newColor);
 
-      localStorage.setItem('animalObjectArray', JSON.stringify(animalObjectArray));
-      location.reload();
-    }
+    localStorage.setItem('animalObjectArray', JSON.stringify(animalObjectArray));
+    location.reload();
   }
 }
 
