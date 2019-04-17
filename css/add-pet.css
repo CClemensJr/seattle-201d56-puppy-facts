@@ -3,16 +3,27 @@ body {
 }
 
 form {
-  margin: 5em auto;
   width: 70%;
   border: 1px solid black;
-}
-
-form {
   margin: 6em auto;
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+}
+
+input {
+  padding: 5px;
+  font-size: 14px;
+}
+
+select {
+  height: 25px;
+  width:11em;
+  font-size: 14px;
+}
+
+label {
+  margin-right: 10px;
 }
 
 h2 { 
@@ -41,8 +52,9 @@ button:hover {
 #deleteAnimal select {
   display: block;
   margin-top: 20px;
-  width: 100px;
-  height: 20px;
+  width: 11em;
+  height: 25px;
+  padding: 10px;
 }
 
 #delete {
