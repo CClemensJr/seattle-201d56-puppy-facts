@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Add Pet</title>
+  <title>Add a Pet</title>
   <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/add-pet.css">
@@ -18,9 +18,10 @@
         </ul>
       </nav>
   </header>
-  <form id = "userInputForm">
-    <label for="petName">Pet Name: </label>
-    <input type="text" name="petName" id="petName" required>
+  <form id = "userInputForm"><br>
+    <h2>Add a New Animal</h2>
+    <br><label for="petName">Pet Name: </label>
+    <input type="text" name="petName" id="petName" required><br>
 
     <br><label for="petType">Pet Type: </label>
     <select id="petType"><br>
@@ -44,9 +45,9 @@
       <option value="black">Black</option>
       <option value="grey">Grey</option>
     </select><br>
-
     <br><button type="submit">Submit</button><br>
   </form> 
+
   <script src="js/app.js"></script> 
   <script src="js/add-pet.js"></script> 
 </body>
