@@ -83,7 +83,7 @@ function createSelectOptions() {
   select = document.createElement('select');
   //loop through animalObjectArray to get options for select box
   for (let i = 0; i < animalObjectArray.length; i++) {
-    select.options[i] = new Option(`${animalObjectArray[i].name}`, `${animalObjectArray[i].name}`);
+    select.options[i] = new Option(`${animalObjectArray[i].name}`, `${animalObjectArray[i].name}, ${i}`);
   }
   deleteForm.appendChild(select);
   //add button after select created
@@ -104,8 +104,19 @@ function deleteAnimal(event) {
   event.preventDefault();
   //get selected option value
   var selectedOption = select.options[select.selectedIndex].value;
-  console.log(selectedOption, ' here is the selected option value');
-  for (let i = 0; i < animalObjectArray.length; i++) {
+  var selectedIndex = selectedOption.substring(selectedOption.indexOf(', ') + 1, selectedOption.length);
+  console.log(selectedIndex, ' here is the selected option value');
+  animalObjectArray.splice(selectedIndex, 1);
+  if(animalObjectArray.length) {
+    localStorage.setItem('animalObjectArray', JSON.stringify(animalObjectArray));
+  } else {
+    localStorage.clear();
+  }
+  //onLoad();
+  //renderPage();
+  location.reload();
+  //get name and match to local storage, remove, refresh array, refresh local storage
+  /*for (let i = 0; i < animalObjectArray.length; i++) {
     if(selectedOption === animalObjectArray[i].name) {
       console.log('hooray! your index is: ', i);
       animalObjectArray.splice(i, 1);
@@ -117,9 +128,7 @@ function deleteAnimal(event) {
       }
       location.reload();
     }
-  }
-  //get name and match to local storage, remove, refresh array, refresh local storage
-  console.log(event);
+  }*/
 }
 
 //document onload function
