@@ -91,8 +91,9 @@ function createSelectOptions() {
   }
   deleteForm.appendChild(select);
   //TODO show animal details
-  animalDetails = document.createElement('p');
-  createAnimalDetailsP(0);
+  animalDetails = document.createElement('div');
+  animalDetails.id = 'details';
+  createAnimalDetails(0);
   deleteForm.appendChild(animalDetails);
   //add button after select created
   createDeleteButton();
@@ -105,14 +106,13 @@ function showAnimalDetails(event) {
   var selectedOption = select.options[select.selectedIndex].value;
   var selectedIndex = selectedOption.substring(selectedOption.indexOf(', ') + 1, selectedOption.length);
   animalDetails.innerHTML = '';
-  createAnimalDetailsP(Number(selectedIndex));
+  createAnimalDetails(Number(selectedIndex));
   console.log(selectedIndex, ' make some changes on this');
 }
 
 //helper function for animal details p creation
-function createAnimalDetailsP(index) {
-  animalDetails.id = 'details';
-  animalDetails.innerHTML = `<ul><li>Type: ${animalObjectArray[index].type}</li><li>Color: ${animalObjectArray[index].color}</li><li>Age: ${animalObjectArray[index].age}</li>`;
+function createAnimalDetails(index) {
+  animalDetails.innerHTML = `<ul><li>Type: ${animalObjectArray[index].type}</li><li>Age: ${animalObjectArray[index].age}</li><li>Color: ${animalObjectArray[index].color}</li>`;
 }
 
 //helper function that creates button for delete form
