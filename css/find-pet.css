@@ -68,3 +68,28 @@ div ul li{
 div ul li:nth-last-child(-n+4){
   margin-left: 130px;
 }
+
+/******************
+* Footer
+******/
+footer {
+  background: #303841;
+  bottom: 0;
+  height: 2em;
+  left: 0;
+  line-height: 2em;
+  position: fixed;
+  /* top: 125em; */
+  width: 100%;
+}
+
+footer section {
+  color: #00adb5;
+  font-family: 'Fredoka One', cursive;
+  font-size: 1em;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  -webkit-text-stroke-color: #ff5722;
+  -webkit-text-stroke-width: 0.05em;
+}
