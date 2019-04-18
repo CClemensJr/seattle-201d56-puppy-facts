@@ -95,7 +95,7 @@
 
 main {
   color:#303841;
-  font-family: font-family: 'Arima Madurai', cursive;
+  font-family: 'Arima Madurai', cursive;
 }
 
 form {
@@ -136,6 +136,8 @@ label {
 }
 
 button {
+  color: #303841;
+  font-family: 'Arima Madurai', cursive;
   width: 20%;
   padding: 5px;
   border-radius: 5px;
