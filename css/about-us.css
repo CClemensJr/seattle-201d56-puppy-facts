@@ -5,94 +5,124 @@
 /*****************
 * Default Styling 
 ***/
-* {
-  box-sizing: border-box;
-}
+  * {
+    box-sizing: border-box;
+  }
 
-body a {
-  color: black;
-  text-decoration: none;
-}
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #eeeeee;
+    height: 100%;
+    width: 100%;
+  }
+
+  body a {
+    color: black;
+    text-decoration: none;
+  }
+
 /*****************
 * Navbar 
 ***/
-header {
-  background: #303841;
-  height: 5em;
-  left: 0;
-  line-height: 5em;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10000;
-}
+  header {
+    background: #303841;
+    height: 5em;
+    left: 0;
+    line-height: 5em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+  }
 
-header section {
-  margin: 0 auto;
-  width: 75%;
-}
+  header section {
+    margin: 0 auto;
+    width: 75%;
+  }
 
-header h1 {
-  float: left;
-}
+  header h1 {
+    float: left;
+  }
 
-header section h1 a {
-  color: #00adb5;
-  font-family: 'Fredoka One', cursive;
-  font-size: 3em;
-  -webkit-text-stroke-color: #ff5722;
-  -webkit-text-stroke-width: 0.05em;
-}
+  header section h1 a {
+    color: #00adb5;
+    font-family: 'Fredoka One', cursive;
+    font-size: 3em;
+    -webkit-text-stroke-color: #ff5722;
+    -webkit-text-stroke-width: 0.05em;
+  }
 
-header section h1 a:hover {
-  color: #ff5722;
-  font-family: 'Fredoka One', cursive;
-  font-size: 3em;
-  -webkit-text-stroke-color: #00adb5;
-  -webkit-text-stroke-width: 0.05em;
-}
+  header section h1 a:hover {
+    color: #ff5722;
+    font-family: 'Fredoka One', cursive;
+    font-size: 3em;
+    -webkit-text-stroke-color: #00adb5;
+    -webkit-text-stroke-width: 0.05em;
+  }
 
-header nav {
-  float: right;
-}
-header nav ul {
-  float: right;
-}
+  header nav {
+    float: right;
+  }
+  header nav ul {
+    float: right;
+  }
 
-header nav ul li {
-  display: inline-block;
-}
+  header nav ul li {
+    display: inline-block;
+  }
 
-header nav ul li a {
-  color: #eeeeee;
-  display: block;
-  font-family: 'Poiret One', cursive;
-  height: 5em;
-  line-height: 5em;
-  padding: 0 0.5em 0 0.5em;
-}
+  header nav ul li a {
+    color: #eeeeee;
+    display: block;
+    font-family: 'Poiret One', cursive;
+    height: 5em;
+    line-height: 5em;
+    padding: 0 0.5em 0 0.5em;
+  }
 
-header nav ul li a:hover {
-  background-color: #00adb5;
-  border-bottom: .1em solid #ff5722;
-  color: #303841;
-}
+  header nav ul li a:hover {
+    background-color: #00adb5;
+    border-bottom: .1em solid #ff5722;
+    color: #303841;
+  }
 
 /*****************
     * about-us page
     ***/
-  body {
-      background-color: #eeeeee;
-  }
 
   main {
+    color: #303841;
+    font-family: 'Arima Madurai', cursive;
+    margin-bottom: 2em;
+    width: 100%;
+  }
+
+  main h1 {
+    color: #303841;
     display: block;
-    min-height: 100vh;
-    overflow: hidden;
-    position: relative;
+    font-family: 'Righteous', cursive;
+    font-size: 3em;
+    margin: 0 auto;
+    padding: 3em 0 .25em 0;
+    text-align: center;
+    -webkit-text-stroke-color: #ff5722;
+    -webkit-text-stroke-width: 0.025em;
+    width: 80%;
+  }
+
+  main ul h1 {
+    font-size: 2em;
+  }
+
+  main ul li:first-of-type h1 {
+    margin-bottom: .5em;
   }
 
   ul li img{
+      border: 1px solid #303841;
       width: 300px;
       height: 350px;
       
@@ -102,10 +132,9 @@ header nav ul li a:hover {
   }
 
   #jen{
-      margin-top: 100px;
+      /* margin-top: 100px; */
       margin-left: 100px;
       vertical-align: top;
-      width:21%;
   } 
 
   #charles{
@@ -125,13 +154,12 @@ header nav ul li a:hover {
       vertical-align: top;
   }
   h2{
-    margin-top: 100px;
+    /* margin-top: 100px; */
     margin-left: 30px;
     display: inline-block;
     width:46%;
     color: #303841;
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
     line-height: normal
   } 
   h3{
@@ -141,7 +169,6 @@ header nav ul li a:hover {
     width:46%;
     color: #303841;
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
     line-height: normal
   } 
 

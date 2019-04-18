@@ -67,9 +67,14 @@ function createDeleteForm() {
 
 //helper function to create label
 function createLabelForDeleteForm() {
+  var h2 = document.createElement("h2")
   var label = document.createElement('label');
+
+  h2.innerText = "Delete an Animal"
   label.setAttribute('for', deleteForm.id);
-  label.innerText = 'Delete an Animal: Search by name ';
+  label.innerText = 'Pet Name:';
+
+  deleteForm.appendChild(h2);
   deleteForm.appendChild(label);
 }
 

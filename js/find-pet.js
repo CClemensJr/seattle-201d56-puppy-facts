@@ -71,6 +71,9 @@ function filter(event) {
     console.log('removing ', divEl.firstElementChild.innerHTML);
     divEl.removeChild(divEl.firstElementChild);
   }
+  if(select.options[select.selectedIndex].value === 'all'){
+    render();
+  }
   render();
 }
 
