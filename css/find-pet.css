@@ -125,7 +125,6 @@ div ul li{
   display: table;
   padding: 10px;
   font-size: large;
-  /* font-family: Arial, Helvetica, sans-serif; */
 }
 div ul li:nth-last-child(-n+4){
   margin-left: 130px;
