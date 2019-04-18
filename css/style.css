@@ -195,11 +195,14 @@
     * Info Section 
     ***/
         #info h1 {
+            color: #303841;
             display: block;
+            font-size: 2em;
             margin: 0 auto;
-            padding-bottom: 3em;
-            padding-top: 6em;
+            padding: 3em 0 1em 0;
             text-align: center;
+            -webkit-text-stroke-color: #ff5722;
+            -webkit-text-stroke-width: 0.025em;
             width: 50%;
         }
 
