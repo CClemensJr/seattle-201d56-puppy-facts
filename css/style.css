@@ -243,6 +243,7 @@
 
         #info section ol {
             border: .5em solid #00adb5;
+            font-family: 'Arima Madurai', cursive;
             height: 15em;
             width: 24.5em;
         }
