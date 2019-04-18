@@ -93,6 +93,10 @@ header nav ul li a:hover {
 body
 *****/
 
+main {
+  color: #303841;
+  font-family: 'Arima Madurai', cursive;
+}
 div{
   display: inline-flex;
   flex-wrap: wrap;
@@ -106,8 +110,7 @@ div ul li{
   display: table;
   padding: 10px;
   font-size: large;
-  font-family: Arial, Helvetica, sans-serif;
-
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 div ul li:nth-last-child(-n+4){
   margin-left: 130px;
