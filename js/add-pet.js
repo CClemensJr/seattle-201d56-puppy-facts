@@ -9,6 +9,7 @@ var newName;
 var newType;
 var newAge;
 var newColor;
+var animalDetails;
 
 function submitForm(event){
   event.preventDefault();
@@ -20,16 +21,18 @@ function submitForm(event){
     duplicateObject.type = event.target.petType.value;
     duplicateObject.age = event.target.petAge.value;
     duplicateObject.color = event.target.petColor.value;
-
+    var check = false;
     for(var i=0; i<animalObjectArray.length; i++){
-      var check = JSON.stringify(duplicateObject) === JSON.stringify(animalObjectArray[i]);
+      check = JSON.stringify(duplicateObject) === JSON.stringify(animalObjectArray[i]);
       if(check) {
-        alert('duplicate');
-        animalObjectArray.splice(i,1);
+        alert('This is a duplicate entry.');
+        //animalObjectArray.splice(i,1);
         break;
       }
     }
-    createNewAnimalWithInput();
+    if(!check) {
+      createNewAnimalWithInput();
+    }
   }
 }
 
@@ -60,6 +63,7 @@ function createDeleteForm() {
     deleteForm.id = 'deleteAnimal';
     createLabelForDeleteForm();
     createSelectOptions();
+    deleteForm.addEventListener('change', showAnimalDetails);
     deleteForm.addEventListener('submit', deleteAnimal);
     document.body.appendChild(deleteForm);
   }
@@ -67,10 +71,10 @@ function createDeleteForm() {
 
 //helper function to create label
 function createLabelForDeleteForm() {
-  var h2 = document.createElement("h2")
+  var h2 = document.createElement('h2')
   var label = document.createElement('label');
 
-  h2.innerText = "Delete an Animal"
+  h2.innerText = 'Delete an Animal';
   label.setAttribute('for', deleteForm.id);
   label.innerText = 'Pet Name:';
 
@@ -86,12 +90,32 @@ function createSelectOptions() {
     select.options[i] = new Option(`${animalObjectArray[i].name}`, `${animalObjectArray[i].name}, ${i}`);
   }
   deleteForm.appendChild(select);
+  //TODO show animal details
+  animalDetails = document.createElement('div');
+  animalDetails.id = 'details';
+  createAnimalDetails(0);
+  deleteForm.appendChild(animalDetails);
   //add button after select created
   createDeleteButton();
   deleteForm.appendChild(deleteButton);
 }
 
-//helper function
+//helper function to show animal details for delete select
+function showAnimalDetails(event) {
+  console.log(event, ' EVENT!!!');
+  var selectedOption = select.options[select.selectedIndex].value;
+  var selectedIndex = selectedOption.substring(selectedOption.indexOf(', ') + 1, selectedOption.length);
+  animalDetails.innerHTML = '';
+  createAnimalDetails(Number(selectedIndex));
+  console.log(selectedIndex, ' make some changes on this');
+}
+
+//helper function for animal details p creation
+function createAnimalDetails(index) {
+  animalDetails.innerHTML = `<ul><li>Type: ${animalObjectArray[index].type}</li><li>Age: ${animalObjectArray[index].age}</li><li>Color: ${animalObjectArray[index].color}</li>`;
+}
+
+//helper function that creates button for delete form
 function createDeleteButton() {
   deleteButton = document.createElement('button');
   deleteButton.id = 'delete';
@@ -112,23 +136,7 @@ function deleteAnimal(event) {
   } else {
     localStorage.clear();
   }
-  //onLoad();
-  //renderPage();
   location.reload();
-  //get name and match to local storage, remove, refresh array, refresh local storage
-  /*for (let i = 0; i < animalObjectArray.length; i++) {
-    if(selectedOption === animalObjectArray[i].name) {
-      console.log('hooray! your index is: ', i);
-      animalObjectArray.splice(i, 1);
-      console.table(animalObjectArray);
-      if(animalObjectArray.length) {
-        localStorage.setItem('animalObjectArray', JSON.stringify(animalObjectArray));
-      } else {
-        localStorage.clear();
-      }
-      location.reload();
-    }
-  }*/
 }
 
 //document onload function
