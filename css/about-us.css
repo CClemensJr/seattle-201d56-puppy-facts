@@ -96,6 +96,7 @@
   main {
     color: #303841;
     font-family: 'Arima Madurai', cursive;
+    margin-bottom: 2em;
     width: 100%;
   }
 
@@ -105,11 +106,15 @@
     font-family: 'Righteous', cursive;
     font-size: 2em;
     margin: 0 auto;
-    padding: 3em 0 .5em 0;
+    padding: 3em 0 .25em 0;
     text-align: center;
     -webkit-text-stroke-color: #ff5722;
     -webkit-text-stroke-width: 0.025em;
     width: 80%;
+  }
+
+  main ul li:first-of-type h1 {
+    margin-bottom: .5em;
   }
 
   ul li img{
