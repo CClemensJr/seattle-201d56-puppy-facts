@@ -173,24 +173,22 @@
 
         #home section a:first-of-type {
             background: rgba(0, 173, 181, .5);
-            color: #ff5722;
         }
 
         #home section a:first-of-type:hover {
             background: #00adb5;
             box-shadow: 5px 5px 2px #ff5722;
+            color: #ff5722;
         }
 
         #home section a:last-of-type {
             background: rgba(255, 87, 34, .9);
-            color: #00adb5;
         }
 
         #home section a:last-of-type:hover {
             background: #ff5722;
             box-shadow: 5px 5px 2px #00adb5;
-            -webkit-text-stroke-color: #303841;
-            -webkit-text-stroke-width: 0.05em;
+            color: #00adb5;
         }
     
     /*****************
@@ -214,7 +212,7 @@
         }
 
         #info section div {
-            border: .5em solid black;
+            border: .5em solid #303841;
             height: 15em;
             width: 15em;
         }
@@ -244,7 +242,7 @@
         }
 
         #info section ol {
-            border: .5em solid black;
+            border: .5em solid #00adb5;
             height: 15em;
             width: 24.5em;
         }
@@ -256,6 +254,7 @@
         }
 
         #info section ol:nth-of-type(2) {
+            border: .5em solid #ff5722;
             left: 0em;
             position: absolute;
             top: 15em;
