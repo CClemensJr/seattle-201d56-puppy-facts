@@ -157,30 +157,28 @@
             width: 50%;
         }
 
-        #home section a:first-of-type {
-            border: .1em solid black;
+        #home section a {
+            border: .1em solid #303841;
             border-radius: 2px;
+            color: #303841;
             display: inline-block;
-            /* float: left; */
-            /* margin: 5em auto; */
-            padding-bottom: .2em;
-            padding-top: .2em;
+            font-family: 'Arima Madurai', cursive;
+            font-size: 1.25em;
+            padding: .2em .5em;
             text-align: center;
-            /* width: 50%; */
+            -webkit-text-stroke-color: #303841;
+            -webkit-text-stroke-width: 0.015em;
             z-index: 1000;
         }
 
+        #home section a:first-of-type {
+            background: rgba(0, 173, 181, .5);
+            color: #ff5722;
+        }
+
         #home section a:last-of-type {
-            border: .1em solid black;
-            border-radius: 2px;
-            display: inline-block;
-            /* margin: 5em auto; */
-            /* float: right; */
-            padding-bottom: .2em;
-            padding-top: .2em;
-            text-align: center;
-            /* width: 50%; */
-            z-index: 1000;
+            background: rgba(255, 87, 34, .5);
+            color: #00adb5;
         }
 
   
