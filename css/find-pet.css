@@ -47,8 +47,8 @@ body
 *****/
 
 div{
-  display: flex;
-  flex-direction: row;
+  display: inline-flex;
+  flex-wrap: wrap;
 }
 img{
   width:400px;

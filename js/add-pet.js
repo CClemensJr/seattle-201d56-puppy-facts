@@ -4,25 +4,16 @@ var animalObjectArray = [];
 var deleteForm;
 var deleteButton;
 var select;
-var duplicateObject = {
-  name: '',
-  type: '',
-  age: '',
-  color: ''
-}
+var duplicateObject = {};
+var newName;
+var newType;
+var newAge;
+var newColor;
 
 function submitForm(event){
   event.preventDefault();
   if(animalObjectArray.length === 0){
-    var newName = event.target.petName.value;
-    var newType = event.target.petType.value;
-    var newAge = event.target.petAge.value;
-    var newColor = event.target.petColor.value;
-
-    new Animal(newName,newType, newAge, newColor);
-
-    localStorage.setItem('animalObjectArray', JSON.stringify(animalObjectArray));
-    location.reload();
+    createNewAnimalWithInput();
   }
   else {
     duplicateObject.name = event.target.petName.value;
@@ -30,10 +21,6 @@ function submitForm(event){
     duplicateObject.age = event.target.petAge.value;
     duplicateObject.color = event.target.petColor.value;
 
-    // if (isEqual(duplicateObject, animalObjectArray)){
-    //   alert('duplicate entry!!!');
-    //   console.log('enters duplicate function');
-    // }
     for(var i=0; i<animalObjectArray.length; i++){
       var check = JSON.stringify(duplicateObject) === JSON.stringify(animalObjectArray[i]);
       if(check) {
@@ -42,16 +29,21 @@ function submitForm(event){
         break;
       }
     }
-    console.log('enters non duplicate function');
-    newName = event.target.petName.value;
-    newType = event.target.petType.value;
-    newAge = event.target.petAge.value;
-    newColor = event.target.petColor.value;
-    new Animal(newName,newType, newAge, newColor);
-
-    localStorage.setItem('animalObjectArray', JSON.stringify(animalObjectArray));
-    location.reload();
+    createNewAnimalWithInput();
   }
+}
+
+//helper function to create new Animal with form input
+function createNewAnimalWithInput() {
+  console.log('enters non duplicate function');
+  newName = event.target.petName.value;
+  newType = event.target.petType.value;
+  newAge = event.target.petAge.value;
+  newColor = event.target.petColor.value;
+  new Animal(newName,newType, newAge, newColor);
+
+  localStorage.setItem('animalObjectArray', JSON.stringify(animalObjectArray));
+  location.reload();
 }
 
 //creates a form to delete an animal if localStorage has info
