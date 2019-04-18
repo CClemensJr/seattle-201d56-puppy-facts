@@ -3,7 +3,6 @@
 <head>
   <title>Add a Pet</title>
   <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
-  <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/style.css"> -->
   <link rel="stylesheet" type="text/css" media="screen" href="css/add-pet.css">
 </head>
 <body>
@@ -28,35 +27,38 @@
             </nav>
         </section>
     </header>
-  <form id = "userInputForm"><br>
-    <h2>Add a New Animal</h2>
-    <label for="petName">Pet Name: </label>
-    <input type="text" name="petName" id="petName" required><br>
 
-    <br><label for="petType">Pet Type: </label>
-    <select id="petType"><br>
-      <option value="petType"></option>
-      <option value="dog">Dog</option>
-      <option value="cat">Cat</option>
-      <option value="pig">Pig</option>
-      <option value="bird">Bird</option>
-      <option value="rabbit">Rabbit</option>
-    </select><br>
-  
-    <br><label for="age">Pet Age: </label>
-    <input type="number" name="petAge" id="petAge" min="1" required><br>
-
-    <br><label for="petColor">Pet Color: </label>
-    <select id="petColor">
-      <option value="petColor"></option>
-      <option value="multicolored">Multicolored</option>
-      <option value="white">White</option>
-      <option value="tan/brown">Tan/Brown</option>
-      <option value="black">Black</option>
-      <option value="grey">Grey</option>
-    </select><br>
-    <br><button type="submit">Submit</button><br>
-  </form> 
+    <main>
+      <form id = "userInputForm">
+        <h2>Add a New Animal</h2>
+        <label for="petName">Pet Name: </label>
+        <input type="text" name="petName" id="petName" required><br>
+    
+        <br><label for="petType">Pet Type: </label>
+        <select id="petType"><br>
+          <option value="petType"></option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="pig">Pig</option>
+          <option value="bird">Bird</option>
+          <option value="rabbit">Rabbit</option>
+        </select><br>
+      
+        <br><label for="age">Pet Age: </label>
+        <input type="number" name="petAge" id="petAge" min="1" required><br>
+    
+        <br><label for="petColor">Pet Color: </label>
+        <select id="petColor">
+          <option value="petColor"></option>
+          <option value="multicolored">Multicolored</option>
+          <option value="white">White</option>
+          <option value="tan/brown">Tan/Brown</option>
+          <option value="black">Black</option>
+          <option value="grey">Grey</option>
+        </select><br>
+        <br><button type="submit">Submit</button><br>
+      </form> 
+    </main>
 
   <footer>
     <section>

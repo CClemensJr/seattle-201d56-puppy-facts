@@ -93,6 +93,25 @@ header nav ul li a:hover {
 body
 *****/
 
+main {
+  color: #303841;
+  font-family: 'Arima Madurai', cursive;
+  width: 100%;
+}
+
+main h1 {
+  color: #303841;
+  display: block;
+  font-family: 'Righteous', cursive;
+  font-size: 2em;
+  margin: 0 auto;
+  padding: 3em 0 .5em 0;
+  text-align: center;
+  -webkit-text-stroke-color: #ff5722;
+  -webkit-text-stroke-width: 0.025em;
+  width: 80%;
+}
+
 div{
   display: inline-flex;
   flex-wrap: wrap;
@@ -106,20 +125,12 @@ div ul li{
   display: table;
   padding: 10px;
   font-size: large;
-  font-family: Arial, Helvetica, sans-serif;
-
 }
 div ul li:nth-last-child(-n+4){
   margin-left: 130px;
 }
 
-#filterAnimal h1 {
-  margin-top: 100px;
-  margin-left: 50px;
-  margin-bottom: 0px;
-}
-
-#filterAnimal h3, form {
+#filterAnimal form {
   margin-top: 10px;
   margin-left: 50px;
   margin-bottom: 0px;
@@ -135,7 +146,6 @@ footer {
   left: 0;
   line-height: 2em;
   position: fixed;
-  /* top: 125em; */
   width: 100%;
 }
 
