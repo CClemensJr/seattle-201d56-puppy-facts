@@ -56,7 +56,7 @@ div{
 img{
   width:400px;
   height: 400px;
-  margin: 80px 30px 30px 30px;
+  margin: 40px 30px 30px 30px;
 }
 div ul li{
   display: table;
@@ -67,6 +67,18 @@ div ul li{
 }
 div ul li:nth-last-child(-n+4){
   margin-left: 130px;
+}
+
+#filterAnimal h1 {
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-bottom: 0px;
+}
+
+#filterAnimal h3, form {
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-bottom: 0px;
 }
 
 /******************
