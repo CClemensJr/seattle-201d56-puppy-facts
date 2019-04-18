@@ -100,7 +100,7 @@ main {
 
 form {
   width: 70%;
-  border: 1px solid black;
+  border: 1px solid #303841;
   margin: 6em auto;
   border-radius: 5px;
   background-color: #f2f2f2;
@@ -132,6 +132,7 @@ select {
 }
 
 label {
+  font-family: 'Arima Madurai', cursive;
   margin-right: 10px;
 }
 
@@ -140,6 +141,7 @@ button {
   border: .1em solid #303841;
   border-radius: 2px;
   color: #ff5722;
+  display: block;
   font-family: 'Arima Madurai', cursive;
   font-size: 1.25em;
   padding: .2em .5em;
@@ -156,8 +158,6 @@ button:hover {
 }
 
 #deleteAnimal select {
-  display: block;
-  margin-top: 20px;
   width: 11em;
   height: 25px;
   padding: 10px;
@@ -167,10 +167,6 @@ button:hover {
   margin-top: 20px;
 }
 
-header nav h1 {
-  float: left;
-  color: white;
-}
 
 /******************
 * Footer
