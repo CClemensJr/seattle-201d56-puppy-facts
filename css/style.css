@@ -276,6 +276,11 @@
             text-align: right;
         }
 
+        #info section ol li span {
+            color: #00adb5;
+            font-size: 1.25em;
+        }
+
 
 /*****************
 * Footer 
