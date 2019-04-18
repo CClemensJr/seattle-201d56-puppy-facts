@@ -270,7 +270,6 @@
         #info section ol li {
             padding: .25em;
             text-align: left;
-            text-decoration-style: wavy;
         }
 
         #info section ol:nth-of-type(2) li {
