@@ -176,12 +176,22 @@
             color: #ff5722;
         }
 
+        #home section a:first-of-type:hover {
+            background: #00adb5;
+            box-shadow: 5px 5px 2px #ff5722;
+        }
+
         #home section a:last-of-type {
-            background: rgba(255, 87, 34, .5);
+            background: rgba(255, 87, 34, .9);
             color: #00adb5;
         }
 
-  
+        #home section a:last-of-type:hover {
+            background: #ff5722;
+            box-shadow: 5px 5px 2px #00adb5;
+            -webkit-text-stroke-color: #303841;
+            -webkit-text-stroke-width: 0.05em;
+        }
     
     /*****************
     * Info Section 
