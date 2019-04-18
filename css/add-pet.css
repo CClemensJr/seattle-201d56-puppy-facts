@@ -89,8 +89,13 @@
   }
 
 
-body {
-  width: 100%;
+/************
+* Main
+***/
+
+main {
+  color:#303841;
+  font-family: font-family: 'Arima Madurai', cursive;
 }
 
 form {
@@ -100,6 +105,19 @@ form {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+}
+
+form h2 {
+  color: #303841;
+  display: block;
+  font-family: 'Righteous', cursive;
+  font-size: 2em;
+  margin: 0 auto;
+  padding: .5em 0 .5em 0;
+  text-align: center;
+  -webkit-text-stroke-color: #ff5722;
+  -webkit-text-stroke-width: 0.025em;
+  width: 80%;
 }
 
 input {
@@ -115,16 +133,6 @@ select {
 
 label {
   margin-right: 10px;
-}
-
-h2 { 
-  display: block;
-  font-size: 2em;
-  margin-top: 0.67em;
-  margin-bottom: 0.67em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
 }
 
 button {
