@@ -113,6 +113,7 @@
   }
 
   ul li img{
+      border: 1px solid #303841;
       width: 300px;
       height: 350px;
       
