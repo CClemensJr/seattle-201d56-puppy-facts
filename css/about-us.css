@@ -1,6 +1,12 @@
+<<<<<<< HEAD
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Arima+Madurai:100|Fredoka+One|Poiret+One');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+=======
 
  @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Arima+Madurai:100|Fredoka+One|Poiret+One');
  @import url('https://fonts.googleapis.com/css?family=Righteous');
+>>>>>>> d3dad13c6f894800a77a785f9e17b6496f1a9b1c
 
 /*****************
 * Default Styling 
@@ -85,6 +91,13 @@ header nav ul li a:hover {
       background-color: #eeeeee;
   }
 
+  main {
+    display: block;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+
   ul li img{
       width: 300px;
       height: 350px;
@@ -137,3 +150,30 @@ header nav ul li a:hover {
     font-family: Arial, Helvetica, sans-serif;
     line-height: normal
   } 
+
+
+
+/******************
+* Footer
+******/
+footer {
+  background: #303841;
+  bottom: 0;
+  height: 2em;
+  left: 0;
+  line-height: 2em;
+  position: fixed;
+  /* top: 125em; */
+  width: 100%;
+}
+
+footer section {
+  color: #00adb5;
+  font-family: 'Fredoka One', cursive;
+  font-size: 1em;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  -webkit-text-stroke-color: #ff5722;
+  -webkit-text-stroke-width: 0.05em;
+}
