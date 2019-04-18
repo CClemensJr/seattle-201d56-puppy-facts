@@ -291,9 +291,7 @@
     body footer {
         background: #303841;
         height: 20em;
-        left: 0;
-        position: absolute;
-        top: 125em;
+        margin-top: 20em;
         width: 100%;
     }
 
