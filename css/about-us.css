@@ -56,6 +56,13 @@ header nav ul li a {
       background-image: url("/assets/img-about-me/background.jpg");
   }
 
+  main {
+    display: block;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+
   ul li img{
       width: 300px;
       height: 350px;
@@ -119,10 +126,10 @@ header nav ul li a {
 footer {
   background: #303841;
   bottom: 0;
-  height: 5em;
+  height: 2em;
   left: 0;
-  line-height: 5em;
-  position: absolute;
+  line-height: 2em;
+  position: fixed;
   /* top: 125em; */
   width: 100%;
 }
@@ -131,8 +138,8 @@ footer section {
   color: #00adb5;
   font-family: 'Fredoka One', cursive;
   font-size: 1em;
-  height: 5em;
-  line-height: 5em;
+  height: 2em;
+  line-height: 2em;
   text-align: center;
   -webkit-text-stroke-color: #ff5722;
   -webkit-text-stroke-width: 0.05em;
