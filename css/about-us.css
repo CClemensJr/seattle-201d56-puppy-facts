@@ -104,13 +104,17 @@
     color: #303841;
     display: block;
     font-family: 'Righteous', cursive;
-    font-size: 2em;
+    font-size: 3em;
     margin: 0 auto;
     padding: 3em 0 .25em 0;
     text-align: center;
     -webkit-text-stroke-color: #ff5722;
     -webkit-text-stroke-width: 0.025em;
     width: 80%;
+  }
+
+  main ul h1 {
+    font-size: 2em;
   }
 
   main ul li:first-of-type h1 {
