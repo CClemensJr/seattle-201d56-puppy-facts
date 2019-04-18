@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Arima+Madurai:100|Fredoka+One|Poiret+One');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+
 /*****************
 * Default Styling 
 ***/
@@ -106,3 +110,30 @@ header nav ul li a {
     font-family: Arial, Helvetica, sans-serif;
     line-height: normal
   } 
+
+
+
+/******************
+* Footer
+******/
+footer {
+  background: #303841;
+  bottom: 0;
+  height: 5em;
+  left: 0;
+  line-height: 5em;
+  position: absolute;
+  /* top: 125em; */
+  width: 100%;
+}
+
+footer section {
+  color: #00adb5;
+  font-family: 'Fredoka One', cursive;
+  font-size: 1em;
+  height: 5em;
+  line-height: 5em;
+  text-align: center;
+  -webkit-text-stroke-color: #ff5722;
+  -webkit-text-stroke-width: 0.05em;
+}
