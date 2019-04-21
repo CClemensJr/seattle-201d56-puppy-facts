@@ -46,7 +46,8 @@ function showAvailableAnimals() {
   ulEl.id = animalObjectArray[i].type;
   liEl = document.createElement('li');
   var imgEl = document.createElement('img');
-  imgEl.src = '../assets/imganimals/' + animalObjectArray[i].type + '.jpg';
+  //https://github.com/CClemensJr/seattle-201d56-puppy-facts/blob/master/assets/imganimals/bird.jpg
+  imgEl.src = 'https://github.com/CClemensJr/seattle-201d56-puppy-facts/blob/master/assets/imganimals/' + animalObjectArray[i].type + '.jpg';
   liEl.appendChild(imgEl);
   ulEl.appendChild(liEl);
   //create li elements with each object property
