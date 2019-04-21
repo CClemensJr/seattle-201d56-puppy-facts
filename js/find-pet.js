@@ -46,7 +46,7 @@ function showAvailableAnimals() {
   ulEl.id = animalObjectArray[i].type;
   liEl = document.createElement('li');
   var imgEl = document.createElement('img');
-  //https://github.com/CClemensJr/seattle-201d56-puppy-facts/blob/master/assets/imganimals/bird.jpg
+  //https://github.com/CClemensJr/seattle-201d56-puppy-facts/blob/master/assets/imganimals/bird.jpg - throws Cross Origin Error
   imgEl.src = '../assets/imganimals/bird.jpg' + animalObjectArray[i].type + '.jpg';
   liEl.appendChild(imgEl);
   ulEl.appendChild(liEl);
@@ -72,8 +72,8 @@ function filter(event) {
     console.log('removing ', divEl.firstElementChild.innerHTML);
     divEl.removeChild(divEl.firstElementChild);
   }
-  if(select.options[select.selectedIndex].value === 'all'){
-    render();
+  if(selectedOption === 'all'){
+    typeFilter = '';
   }
   render();
 }
